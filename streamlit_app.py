@@ -50,9 +50,7 @@ if streamlit.button('Get Fruit Load List'):
   my_data_rows = get_fruit_load_list()
   streamlit.dataframe(my_data_rows)
   
-    
-streamlit.dataframe(my_data_rows)
-
+streamlit.stop()
 addfruit = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado'])
 streamlit.write("Thanks for adding ", addfruit)
 
