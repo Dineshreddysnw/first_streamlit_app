@@ -61,7 +61,7 @@ if streamlit.button('Add a fruit to a list'):
   back_from_function = insert_row_snowflake(add_my_fruit)
   streamlit.text(back_from_function)
     
-stremlit.stop()
+streamlit.stop()
 addfruit = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado'])
 streamlit.write("Thanks for adding ", addfruit)
 
